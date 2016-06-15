@@ -4,7 +4,7 @@
  * 创建者：郑哲
  * 创建时间：2016年5月22日 下午5:15:54
  */
-package cn.nbcc.chap06.snippets;
+package cn.nbcc.ex25.ch06;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;
