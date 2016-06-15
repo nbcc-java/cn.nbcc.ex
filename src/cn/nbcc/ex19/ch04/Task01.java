@@ -1,8 +1,5 @@
 package cn.nbcc.ex19.ch04;
-
-
 public class Task01 {
-
 	static class Person{
 		String name;
 		Person(String name){
@@ -46,5 +43,4 @@ public class Task01 {
 		c.speak();
 		c.eat();
 	}
-
 }
