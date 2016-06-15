@@ -50,9 +50,9 @@ public class App {
 			System.out.println(student.getName());
 		}
 		
-		Student s = new Student("ÕÔÁù");
-		if (!stuList.contains(s)) {
-			stuList.add(s);
+		Student s1 = new Student("ÕÔÁù");
+		if (!stuList.contains(s1)) {
+			stuList.add(s1);
 		}
 //
 //		System.out.println("------------------");
