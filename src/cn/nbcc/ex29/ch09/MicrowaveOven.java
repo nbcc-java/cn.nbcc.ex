@@ -20,6 +20,7 @@ public class MicrowaveOven {
 	private DisplayPanel displayPanel;
 	private KeyboardPanel keyboardPanel;
 	private ControlPanel controlPanel;
+	private SoundManager soundManager;
 	private ArrayList<IStatusChangeListener> listeners = new ArrayList<>();
 	private MicrowaveOvenStatus status;
 	
@@ -61,7 +62,7 @@ public class MicrowaveOven {
 		addStatusChangeListener(keyboardPanel);
 		addStatusChangeListener(displayPanel);
 		addStatusChangeListener(controlPanel);
-		
+		addStatusChangeListener(soundManager);
 		
 		setStatus(MicrowaveOvenStatus.UNSETTING);
 		fireStatusChange();
@@ -110,7 +111,7 @@ public class MicrowaveOven {
 		displayPanel = new DisplayPanel(shell, SWT.BORDER);
 		keyboardPanel = new KeyboardPanel(shell, SWT.BORDER);
 		controlPanel = new ControlPanel(shell, SWT.BORDER);
-
+		soundManager = new SoundManager(shell, SWT.NONE);
 	}
 
 	/**
